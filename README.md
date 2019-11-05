@@ -1,2 +1,3 @@
-# core-modules
-AMM Core Modules metapackage
+# AMM Core Modules - Metapackage
+
+This is the AMM Core Modules metapackage.

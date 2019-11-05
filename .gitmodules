@@ -1,0 +1,24 @@
+[submodule "amm-library"]
+	path = amm-library
+	url = https://github.com/AdvancedModularManikin/amm-library
+	branch = master
+[submodule "simulation-manager"]
+	path = simulation-manager
+	url = https://github.com/AdvancedModularManikin/simulation-manager
+	branch = master
+[submodule "physiology-manager"]
+	path = physiology-manager
+	url = https://github.com/AdvancedModularManikin/physiology-manager
+	branch = master
+[submodule "module-manager"]
+	path = module-manager
+	url = https://github.com/AdvancedModularManikin/module-manager
+	branch = master
+[submodule "rest-adapter"]
+	path = rest-adapter
+	url = https://github.com/AdvancedModularManikin/rest-adapter
+	branch = master
+[submodule "tcp-bridge"]
+	path = tcp-bridge
+	url = https://github.com/AdvancedModularManikin/tcp-bridge
+	branch = master
