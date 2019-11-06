@@ -58,6 +58,7 @@ find_package(Threads REQUIRED)
 find_package(fastcdr REQUIRED)
 find_package(fastrtps REQUIRED)
 find_package(amm_std)
+
 if (amm_std_NOTFOUND)
    add_subdirectory(amm-library)
 endif()
