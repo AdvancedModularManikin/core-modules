@@ -57,6 +57,13 @@ find_package(Boost REQUIRED)
 find_package(Threads REQUIRED)
 find_package(fastcdr REQUIRED)
 find_package(fastrtps REQUIRED)
+if (MSVC)
+   find_package(TinyXML2 REQUIRED NO_SYSTEM_ENVIRONMENT_PATH)
+else ()
+   find_package(TinyXML2 REQUIRED)
+endif ()
+find_package(SQLite3 REQUIRED)
+
 find_package(amm_std)
 
 if (amm_std_NOTFOUND)
