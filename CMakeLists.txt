@@ -60,7 +60,7 @@ find_package(fastrtps REQUIRED)
 if (MSVC)
    find_package(TinyXML2 REQUIRED NO_SYSTEM_ENVIRONMENT_PATH)
 else ()
-   find_package(TinyXML2 REQUIRED NO_SYSTEM_ENVIRONMENT_PATH)
+   find_package(TinyXML2 REQUIRED)
 endif ()
 find_package(SQLite3 REQUIRED)
 
