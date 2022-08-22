@@ -8,7 +8,7 @@ project("AMM_Core_Modules")
 
 set(VERSION_TYPE "beta" CACHE STRING "version type" FORCE)
 set(PROJECT_VERSION_MAJOR, 1)
-set(PROJECT_VERSION_MINOR, 0)
+set(PROJECT_VERSION_MINOR, 1)
 set(PROJECT_VERSION_PATCH@, 0)
 site_name(VERSION_HOST) # read hostname to VERSION_HOST
 set(VERSION_HOST "${VERSION_HOST}" CACHE STRING "host of build" FORCE)
