@@ -66,7 +66,7 @@ find_package(SQLite3 REQUIRED)
 
 find_package(amm_std)
 
-if (amm_std_NOTFOUND)
+if (NOT amm_std_FOUND)
    add_subdirectory(amm-library)
 endif()
 
