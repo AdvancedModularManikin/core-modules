@@ -64,11 +64,13 @@ else ()
 endif ()
 find_package(SQLite3 REQUIRED)
 
-find_package(amm_std)
-
-if (NOT amm_std_FOUND)
-   add_subdirectory(amm-library)
-endif()
+# Build amm-library in-tree first; the modules link to the amm_std target.
+# Their find_package(amm_std REQUIRED) calls are satisfied by a shim config so
+# they never pick up a stale installed/registered copy.
+# amm-library locates its cmake modules via CMAKE_SOURCE_DIR, which is this root when built in-tree.
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/amm-library/cmake)
+add_subdirectory(amm-library)
+set(amm_std_DIR "${CMAKE_SOURCE_DIR}/cmake/amm_std" CACHE PATH "in-tree amm_std shim" FORCE)
 
 include_directories(${Boost_INCLUDE_DIRS})
 
